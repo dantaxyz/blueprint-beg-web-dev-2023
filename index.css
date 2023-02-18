@@ -4,13 +4,20 @@
     font-family: 'Courier New', Courier, monospace;
 }
 
+.body-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+}
+
 p {
     color: pink;
     font-family: helvetica;
     font-size: 1.5rem;
     /* animation-name: color-change;
     animation-duration: 3s; */
-  }
+}
   
 .fun-facts{
     font-weight: bold;
@@ -22,49 +29,39 @@ p {
     display: flex;
     flex-direction: row;
     justify-content: center;
-  }
+}
   
-  #submit {
+#submit {
     background-color: #abefff;
     padding: 10px;
     margin: 0px 5px;
     border-radius: 10px;
-  }
+}
   
-  #random {
-    background-color: #eeabff;
+#random {
+    animation-name: color-change;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
     padding: 10px;
     margin: 0px 5px;
     border-radius: 10px;
-  }
+}
   
-  #submit:hover {
+#submit:hover {
     background-color: #5cbcd2;
     cursor: pointer;
-  }
+}
   
-  #random:hover {
+#random:hover {
     cursor: pointer;
     background-color: #df7df7;
-  }
+}
 
 
 
-  @keyframes color-change {
+@keyframes color-change {
     0%   {background-color: red;}
     25%  {background-color: yellow;}
     50%  {background-color: blue;}
     100% {background-color: green;}
-  }
-  
-  @keyframes slidein {
-    from {
-      margin-left: 100%;
-      width: 300%;
-    }
-  
-    to {
-      margin-left: 0%;
-      width: 100%;
-    }
-  }
+}
